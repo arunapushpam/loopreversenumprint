@@ -8,17 +8,68 @@
 </head>
 <body>
 		<script>
-			var a=prompt("Ener Number");
-			var sum=0;
-			while (a>0){
+			<!-- var a=prompt("Ener Number"); -->
+			<!-- var sum=0; -->
+			<!-- while (a>0){ -->
 			
-				var rem=a%10;
-					sum=(sum*10)+rem;
+				<!-- var rem=a%10; -->
+					<!-- sum=(sum*10)+rem; -->
 					
-				a=(a-rem)/10;
+				<!-- a=(a-rem)/10; -->
 				
-			}
-			console.log(sum);
+			
+				<!-- if (rem==0){ -->
+					<!-- console.log("zero"); -->
+				<!-- } -->
+				<!-- else if (rem==1){ -->
+					<!-- console.log("One"); -->
+				<!-- } -->
+				<!-- else if (rem==2){ -->
+					<!-- console.log("Two"); -->
+				<!-- } -->
+				<!-- else if (rem==3){ -->
+					<!-- console.log("Three"); -->
+				<!-- } -->
+				<!-- else if (rem==4){ -->
+					<!-- console.log("Four"); -->
+				<!-- } -->
+				<!-- else if (rem==5){ -->
+					<!-- console.log("Five"); -->
+				<!-- } -->
+				<!-- else if (rem==6){ -->
+					<!-- console.log("Six"); -->
+				<!-- } -->
+				<!-- else if (rem==7){ -->
+					<!-- console.log("Seven"); -->
+				<!-- } -->
+				<!-- else if (rem==8){ -->
+					<!-- console.log("eight"); -->
+				<!-- } -->
+				<!-- else if (rem==9){ -->
+					<!-- console.log("Nine"); -->
+				<!-- } -->
+			<!-- } -->
+			
+			
+	var number=prompt("enter 3 digit number")
+	var sum=0
+	var num=number//create temporary variable;
+	
+	while(num>0){
+	var remainder=num%10;
+	sum=sum+(remainder*remainder*remainder);
+	num=parseInt(num/10)
+	}
+	if(sum==number){
+	    console.log("It is a armstrong number")
+	}
+	else{
+	    console.log("It is  a not  armstrong number")
+	}
+	
+	
+	
+			
 		</script>
 </body>
 </html>
